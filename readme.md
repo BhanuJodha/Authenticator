@@ -12,12 +12,12 @@ CONTENTS OF THIS FILE
 INTRODUCTION
 ------------
 
-This is a Habit Tracking app which have some basic functionality like :-
+This is a Authentication app which have some basic functionality like :-
   
-   - Adding habits to database.
-   - Remove habits from database.
-   - Keep track of habits.
-   - Three stage of status.
+   - Sign-up user to database.
+   - Sign-in user from database.
+   - Keep track of by sending mails.
+   - Recaptcha security.
    - Many more.
 
 REQUIREMENTS
