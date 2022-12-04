@@ -20,4 +20,8 @@ const login = async (e) => {
     }
 }
 
+function onSubmit(token) {
+    document.getElementById("submit").click();
+}
+
 form.addEventListener("submit", login);

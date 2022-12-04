@@ -35,9 +35,10 @@ app.set("view engine", "ejs");
 app.set("views", "./views")
 
 // extracting form and json data
-app.use(express.urlencoded({extended: true}));
+app.use(express.urlencoded({extended: false}));
 app.use(express.json());
 
+// session initi
 app.use(session({
     secret: env.jwt_token,
     name: "Authenticator",

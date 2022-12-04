@@ -19,4 +19,8 @@ const signUp = async (e) => {
     }
 }
 
+function onSubmit(token) {
+    document.getElementById("submit").click();
+}
+
 form.addEventListener("submit", signUp);

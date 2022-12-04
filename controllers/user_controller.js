@@ -12,6 +12,15 @@ exports.signUp = (req, res) => {
     })
 }
 
+exports.signOut = (req, res) => {
+    req.logOut((err) => {
+        if(err) {
+            return res.redirect("back");
+        }
+        res.redirect("/user/sign-in")
+    })
+}
+
 exports.verify = (req, res) => {
     User.findById(req.params.id, (err, user) => {
         if (err || !user || user.verified){
